@@ -5,7 +5,7 @@ require 'csv'
 desc "Import artworks from csv file"
 task :import => [:environment] do
 
-  file = "db/artwork_data.csv"
+  file = "db/test.csv"
 
   CSV.foreach(file, :headers => true, encoding: "UTF-8" ) do |row|
     hash = row.to_hash
