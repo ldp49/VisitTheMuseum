@@ -5,22 +5,11 @@ require 'csv'
 desc "Import artworks from csv file"
 task :import => [:environment] do
 
-  file = "db/teams.csv"
+  file = "db/artwork_data.csv"
 
-  CSV.foreach(file, :headers => true) do |row|
-    Work.create {
-      :name => row[1],
-      :league => row[2],
-      :name => row[1],
-      :name => row[1],
-      :name => row[1],
-      :name => row[1],
-      :name => row[1],
-      :name => row[1],
-      :name => row[1],
-      :name => row[1],
-      :some_other_data => row[4]
-    }
+  CSV.foreach(file, :headers => true, encoding: "UTF-8" ) do |row|
+    hash = row.to_hash
+    Work.create(hash)
   end
 
 end
