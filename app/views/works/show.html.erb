@@ -1,8 +1,28 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Author:</strong>
-  <%= @work.author %>
+  <strong>Artwork:</strong>
+  <%= @work.artwork %>
+  <strong>Artist:</strong>
+  <%= @work.artist %>
+  <strong>ArtistBio:</strong>
+  <%= @work.artistbio %>
+  <strong>Date:</strong>
+  <%= @work.date%>
+  <strong>Medium:</strong>
+  <%= @work.medium %>
+  <strong>Dimensions:</strong>
+  <%= @work.dimensions %>
+  <strong>MoMANumber:</strong>
+  <%= @work.momanumber %>
+  <strong>Classification:</strong>
+  <%= @work.classification %>
+  <strong>Department:</strong>
+  <%= @work.department %>
+  <strong>ObjectID:</strong>
+  <%= @work.objectid %>
+  <strong>URL:</strong>
+  <%= @work.url %>
 </p>
 
 <%= link_to 'Edit', edit_work_path(@work) %> |
