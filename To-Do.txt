@@ -1,0 +1,6 @@
+Make search general
+  Show all the results listed
+  statistics for words
+  Give suggestions for possible things to search 
+  
+The uploading tool 
