@@ -4,7 +4,11 @@ class WorksController < ApplicationController
   # GET /works
   # GET /works.json
   def index
-    @works = Work.all
+    if params[:search]
+      @works = Work.search(params[:search]).order("created_at DESC")
+    else
+      @works = Work.all
+    end
   end
 
   # GET /works/1
