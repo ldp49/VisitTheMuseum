@@ -4,3 +4,7 @@ Make search general
   Give suggestions for possible things to search 
   
 The uploading tool 
+  single upload
+  batch upload
+  drag and drop
+  
